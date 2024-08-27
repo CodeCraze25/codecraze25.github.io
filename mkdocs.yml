@@ -1,0 +1,74 @@
+site_name: Hawcx Documentation
+site_url: https://hawcx.github.io/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.full-text
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.sticky
+  language: en
+#  palette:
+#    - scheme: slate  # Dark mode
+#      primary: '#121212'  # Very dark grey background
+#      accent: '#00bfa5'   # Teal accent
+#      text: '#f5f5f5'     # Very light grey text for better contrast
+#      header: '#1c1c1c'   # Slightly lighter for headers
+#      links: '#bbdefb'    # Lighter blue for links
+#  font:
+#    text: "Lato"
+#    code: "Source Code Pro"
+  logo: images/Logo-White.png
+
+extra_css:
+  - css/custom.css
+
+nav:
+  # - Home: index.md
+  - Introduction: introduction.md
+  - Demo Application: demo-application.md
+  - "_________________________________________________": "_separator.md" 
+  - Android:
+    - Get Started: get-started.md
+    - Existing Project: android/existing-project.md
+    - New Project: android/new-project.md
+    - Start from Template: android/template-project.md
+    - Java Integration: android/java-integration.md
+    - React Native Integration: android/react-integration.md
+    # - Best Practices: android/best-practices.md
+    # - Next Steps: android/next-steps.md
+  - FAQs: faqs.md
+  - Feature Requests: feature-requests.md
+  - Feedback / Complaints: feedback.md
+  - Troubleshoot: troubleshoot.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js
+ 
+copyright: |
+  &copy; 2024 <a href="https://www.hawcx.com" target="_blank" rel="noopener">Hawcx Inc</a>
